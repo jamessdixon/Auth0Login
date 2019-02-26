@@ -5,7 +5,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Support.fs" />
-    <Compile Include="Main.fs" />
     <Compile Include="Login.fs" />
     <Compile Include="App.fs" />
     <Compile Include="AssemblyInfo.fs" />

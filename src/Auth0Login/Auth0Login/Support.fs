@@ -1,4 +1,5 @@
-﻿namespace Auth0Login
+﻿//this tutorial: https://auth0.com/blog/developing-mobile-apps-with-xamarin-forms-and-azure-functions/
+namespace Auth0Login
 
 open System.Security.Claims
 
@@ -16,14 +17,9 @@ type AuthenticationResult =
 type IAuthenticationService = 
     abstract member Authenticate : AuthenticationResult
     
-type IAzureFunctionDataService = 
-    abstract member GetGreeting : authenticationResult:AuthenticationResult -> string
-
-
 module Support =
     let authenticationConfig = {Domain="sameroom.auth0.com"; ClientId="swOmR3UQJm26QlTVjtssAzQijfKUTaLV"; 
                                 Audience = "https://sameroom.azurewebsites.net/api/Echo"}
-    let azureConfig = {EchoUrl = "https://sameroom.azurewebsites.net/api/Echo"}
 
 
    
