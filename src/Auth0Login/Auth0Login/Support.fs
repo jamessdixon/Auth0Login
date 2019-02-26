@@ -18,7 +18,7 @@ type IAuthenticationService =
     abstract member Authenticate : AuthenticationResult
     
 module Support =
-    let authenticationConfig = {Domain="sameroom.auth0.com"; ClientId="swOmR3UQJm26QlTVjtssAzQijfKUTaLV"; 
+    let authenticationConfig = {Domain="dev-lf8igpbj.auth0.com"; ClientId="f7oEF-Oo0yU3NiMe06GZ6sAnr5bUzyeh"; 
                                 Audience = "https://sameroom.azurewebsites.net/api/Echo"}
 
 
